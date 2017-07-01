@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Мишка</title>
+	<link rel="stylesheet" href="#" type="text/css">
+</head>
+<body>
+	<header class="page_header">
+		<h1 class="visually_hidden"></h1>
+		<div class="page_header__logo"><a href="index.html"><img src="img/mishka-logo-mobile.png" alt="Mishka" width="86" height="35"></a></div>
+		<nav class="main_navigation">
+			<button class="main_navigation__toggle">Открыть/Закрыть меню</button>
+			<div class="main_navigation__wrapper">
+				<ul class="main_navigation__list">
+					<li class="main_navigation__item"><a href="catalog.html">Каталог товаров</a></li>
+					<li class="main_navigation__item"><a href="#">Вязание на заказ</a></li>
+				</ul>
+				<ul class="main_navigation__user_block">
+					<li class="main_navigation__user_item"><label>Поиск по сайту</label><input type="text" class="main_navigation__user_search"></li>
+					<li class="main_navigation__user_item"><a href="#" class="main_navigation__user_basket">Корзина:<span id=basket></span></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="wrapper">
+		<section class="order">
+			<h1 class="page__title  order__title">Вязание на заказ</h1>
+			<form action="" class="order__form">
+				<p class="order__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+				<fieldset class="product">
+					<legend class="product__title">Тип</legend>
+					<input type="radio" class="product__type" name="accessory_for_interier">
+					<label for="" class="product__client">Аксессуар для интерьера</label>
+					<input type="radio" class="product__type" name="toy_of_child">
+					<label for="" class="product__client">Детская игрушка</label>
+				</fieldset>
+				<fieldset class="product">
+					<legend class="product__title">Цвет</legend>
+					<input type="checkbox" class="product__color" name="white">
+					<label for="" class="product__client">Белый</label>
+					<input type="checkbox" class="product__color" name="grey">
+					<label for="" class="product__client">Серый</label>
+					<input type="checkbox" class="product__color" name="tiffany">
+					<label for="" class="product__client">"Таффани"</label>
+					<input type="checkbox" class="product__color" name="black">
+					<label for="" class="product__client">Черный</label>
+					<input type="checkbox" class="product__color" name="pink">
+					<label for="" class="product__client">Розовый</label>
+					<input type="checkbox" class="product__color" name="orange">
+					<label for="" class="product__client">Оранжевый</label>
+				</fieldset>
+				<fieldset class="product">
+					<legend class="product__title">ФИО</legend>
+					<label for="" class="product__client">Фамилия</label>
+					<input type="text" class="product__surname" name="surname" placeholder="Укажите фамилию">
+					<label for="" class="product__client">Имя</label>
+					<input type="text" class="product__name" name="name" placeholder="Введите Ваше имя">
+					<label for="" class="product__client">Отчество</label>
+					<input type="text" class="product__patronymic" name="patronymic" placeholder="Отчество, если желаете">
+				</fieldset>
+				<fieldset class="product">
+					<legend class="product__title">Тел</legend>
+					<input type="tel" class="product__telphone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ">
+				</fieldset>
+				<fieldset class="product">
+					<legend class="product__title">E-mail</legend>
+					<input type="text" class="product__email" name="Email" placeholder="Ваш e-mail">
+				</fieldset>
+				<fieldset class="product">
+					<legend class="product__title">Доп</legend>
+					<input type="textarea" class="product__addition" name="addition" placeholder="Опишите все Ваши пожелания к заказу">
+				</fieldset>
+				<button class="btn">Оформить заказ</button>
+			</form>
+		</section>
+	</main>
+	<footer class="page_footer">
+		<div class="page_footer__wrapper">
+			<p class="page_footer__social"><span class="socil_grouping">
+					<a href="" class="social_link">Инстаграм</a>
+					<a href="" class="social_link">Фейсбук</a>
+					<a href="" class="social_link">Твиттер</a>
+				</span></p>
+			<p class="page_footer__copyright">Разработано <a href="#"></a></p>
+		</div>
+	</footer>
+</body>
+</html>

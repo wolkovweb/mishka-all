@@ -1,0 +1,58 @@
+.page_header {
+	// width: auto;
+	// margin: 0;
+	// padding: 0;
+	
+	.bem_level_1();
+}
+
+.page_header__logo {
+	// width: 86px; /* 0,26875% */
+	// margin: 0 auto;
+	// padding: 22px 0; /* 0,28125% */
+	
+	// font-size: 0;
+	min-height: 78px;//grid
+	
+	border-top: 1px solid @unactive_element;
+	.bem_level_2();//разметка
+}
+
+	.page_header__logo a {
+		// display: block;
+		
+		// font-size: 0;
+	}
+
+	.page_header__logo img {
+		// margin-bottom: 1px;
+	}
+	
+@media (min-width: 668px) {
+
+	.page_header {
+		// /* min- */height: 834px;
+	}
+	
+	.page_header__logo {
+		min-height: 88px;//grid
+		float: left;//grid
+		// position: absolute;
+		
+		// width: auto;
+	}
+
+	.page_header__logo img {
+		.bem_level_3();
+	}
+}
+
+
+@media (min-width: 1050px) {
+	
+	.page_header__logo {
+		position: absolute;//grid
+		top: 0;//grid
+		left: 50%;//grid
+	}
+}

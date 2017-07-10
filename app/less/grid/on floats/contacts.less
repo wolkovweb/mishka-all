@@ -1,0 +1,172 @@
+.contacts {
+	.wrapper();//grid
+	.bem_level_2();
+	// .mobile_block();
+	padding-top: 40px;//grid
+	padding-bottom: 39px;//grid
+	
+	// background-image: none;
+}
+
+// .contacts__wrapper {
+// }
+
+.contacts__header {
+	.bem_level_3();
+	margin-bottom: 30px;//grid
+}
+
+
+.contacts__title {
+	.bem_level_4();
+	margin-bottom: 24px;//grid
+	// .mobile_h2();
+}
+
+
+.contacts__table {
+	.bem_level_4();
+	// width: 100%;
+	// margin-bottom: 32px;
+	
+	// .base_text--mobile;
+	// font-size: @font_size_min;
+	// line-height: @line_height_title;
+	
+	
+	.contacts td:first-child {
+		// padding-bottom: 26px;
+		
+	}
+	
+	
+	.contacts td {
+		// vertical-align: top;
+	}
+}
+
+
+.contacts__value {
+	// padding-left: 28px;
+}
+
+.contacts__table tr {
+}
+
+
+.contacts__map {
+	.bem_level_3();
+	margin: 0 -30px;//grid
+	// position: relative;
+	
+	// width: 320px;
+	// height: 455px;
+	// margin: 0 -30px;
+	margin-bottom: 40px;//grid
+	
+	background: url('../img/map-index-mobile.jpg') no-repeat;
+	background-size: cover;
+
+
+
+	.contacts .map_pin {
+		// position: absolute;
+		// top: 37%;
+		// left: 39%;
+		
+		// width: 67px;
+		// height: 100px;
+	}
+
+}
+
+.contacts__footer {
+	.bem_level_3();
+}
+
+@media (min-width: 668px) {
+	.contacts {
+		position: relative;//grid
+		
+		padding-top: 64px;//grid
+		padding-bottom: 57px;//grid
+	}
+	
+	.contacts__header {
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			
+			width: 50px;
+			height: 50px;
+			
+			background-color: lime;
+		}
+	}
+	
+	.contacts__header {
+		margin-bottom: 56px;//grid
+	}
+	
+	.contacts__title {
+		margin-bottom: 46px;//grid
+	}
+
+	.contacts__table {
+	}
+	
+	.contacts__map {
+		margin-bottom: 55px;//grid
+	}
+}
+
+@media (min-width: 1050px) {
+	.contacts {
+		.clearfix();
+		position: relative;//grid
+		
+		width: calc(1050px - 175px);//grid
+		padding-top: 64px;//grid
+		padding-left: 175px;//grid
+		padding-bottom: 105px;//grid
+		
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			
+			width: 50px;
+			height: 50px;
+			
+			background-color: lime;
+		}
+	}
+	
+	.contacts__header {
+		float: left;//grid
+		
+		margin-bottom: 78px;//grid
+		
+		width: 90%;
+		
+		&::after {
+			content: none;
+		}
+	}
+
+	.contacts__table {
+	}
+	
+	.contacts__map {
+		float: right;//grid
+		
+		margin: 0;//grid
+	}
+	
+	.contacts__footer {
+		float: left;//grid
+	}
+}

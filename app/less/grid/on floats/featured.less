@@ -1,0 +1,266 @@
+.featured {
+	.bem_level_2();//grid
+	// .mobile_block();\
+}
+
+.featured__wrapper {
+	.wrapper();//grid
+	.bem_level_3();//grid
+	padding-top: 27px;//grid
+	padding-bottom: 41px;//grid
+}
+
+.featured__header {
+	.bem_level_4();//grid
+}
+
+.featured__title {
+	.bem_level_5();//grid
+	margin: 0;//grid
+	margin-bottom: 8px;//grid
+	// .mobile_h2();
+	line-height: 30px;//grid
+	// letter-spacing: -1px;
+}
+
+
+.featured__category {
+	.bem_level_5();//grid
+	margin-bottom: 26px;//grid
+	// display: block;
+	// margin-bottom: 26px;
+	line-height: 16px;//grid
+	// .font_OpenSans();
+	// font-size: @font_size_base;
+	// font-weight: 600;
+	// line-height: @font_size_base;
+	// color: @bk_banner;
+	// text-transform: uppercase;
+}
+
+
+.featured__text {
+	.bem_level_4();//grid
+	margin: 0;
+	margin-bottom: 18px;//grid
+	
+	line-height: 24px;//grid
+	
+	// margin: 0;
+	// margin-bottom: 14px;
+	
+	// .base_text--mobile;
+	// font-size: @font_size_min;
+	// line-height: @line_height_base;
+}
+
+.featured__table {
+	.bem_level_4();//grid
+	width: 100%;//grid
+	display: table;//grid
+	margin-bottom: 28px;//grid
+	
+	// .base_text--mobile();
+	// font-size: @font_size_min;
+	line-height: 20px;//grid
+}
+
+
+.featured& td {
+	// padding: 9px 0;
+	
+	// border-bottom: 1px solid @unactive_element;
+}
+
+
+.featured__foto {
+	.bem_level_4();
+	margin-bottom: 24px;//grid
+	// text-align: center;
+}
+
+
+.featured img {
+}
+
+
+.featured__price {
+	.bem_level_4();
+	// display: block;
+	margin-bottom: 26px;//grid
+	
+	// .font_Verdana();
+	// font-size: @font_size_base;
+	// font-weight: bold;
+	line-height: 24px;//grid
+	// color: @base_text;
+}
+
+.featured a {
+	.bem_level_4();
+}
+
+@media (min-width: 668px) {
+
+	.featured {
+		// min-height: 581px;
+		// padding: 0;
+		// padding-top: 44px;
+	}
+	
+	.featured__wrapper {
+		.clearfix();//grid
+		
+		padding-top: 42px;//grid
+		padding-bottom: 69px;//grid
+
+	}
+	
+	.featured__header {
+		.clearfix();//grid
+		margin-bottom: 50px;//grid
+	}
+	
+	.featured__title,
+	.featured__category {
+		// display: inline;
+	}
+	
+	.featured__title {
+		float: left;//grid
+		
+		margin: 0;//grid
+		// margin-right: 150px;
+		
+		line-height: 50px;
+	}
+	
+	.featured__category {
+		float: right;//grid
+		
+		margin: 0;//grid
+		margin-top: 17px;//grid
+	}
+	
+	.featured__text {
+		float: left;//grid
+		
+		width: 60%;//grid
+		margin-bottom: 36px;//grid
+	}
+	
+	.featured__table {
+		float: left;//grid
+		
+		display: block;//grid
+		width: 60%;//grid
+		margin-bottom: 58px;//grid
+		
+		// position: absolute;
+		// top: 280px;
+		
+		// width: auto;
+		// margin-bottom: 150px;
+	}
+	
+	.featured__foto {
+		float: right;//grid
+		
+		margin: 0;//grid
+		margin-top: -83px;//grid
+		
+		font-size: 0;//grid
+	}
+	
+	.featured img {
+		// float: right;
+		
+		// min-height: 405px;
+	}
+	
+	.featured__price {
+		float: left;//grid
+		
+		width: 60%;//grid
+		margin-bottom: 32px;//grid
+		
+		// width: 50%;
+	}
+	
+	.featured .btn {
+		float: left;//grid
+		width: 60%;//grid
+		
+		// width: auto;
+	}
+	
+}
+
+@media (min-width: 1050px) {
+
+	.featured {
+		// min-height: 679px;
+		// padding: 0;
+		// padding-top: 124px;
+	}
+	
+	.featured__wrapper {
+		position: relative;//grid
+	
+		width: calc(1050px - 175px);//grid
+		padding-left: 175px;//grid
+		padding-bottom: 96px;//grid
+	}
+	
+	.featured__header {
+		width: auto;//grid
+		margin-bottom: 46px;//grid
+	}
+	
+	.featured__text{
+		// float: right;
+		margin-bottom: 58px;//grid
+		// margin-right: 350px;
+	}
+	
+	.featured__category {
+		position: absolute;//grid
+		float: none;//grid
+		top: 0;//grid
+		left: 0;//grid
+		// margin-bottom: 622px;
+	}
+	
+	.featured__table {
+		// width: auto;
+		margin-bottom: 110px;//grid
+	}
+	
+	.featured__foto {
+		// float: left;
+		margin-top: -106px;//grid
+		// .clearfix();
+		// margin-left: 175px;
+		
+		// min-height: 400px;
+	}
+	
+	.featured img {
+		// float: right;
+		
+		// width: 50%;
+	}
+	
+	.featured__price {
+		// float: left;
+		
+		// width: 50%;
+		margin-bottom: 32px;//grid
+	}
+	
+	.featured a {
+		// float: left;
+		
+		// width: 50%;
+	}
+}

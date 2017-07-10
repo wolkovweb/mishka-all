@@ -1,0 +1,168 @@
+.catalog {
+	.bem_level_2();
+}
+
+.catalog__title_wrapper {
+	// margin-bottom: 30px;//grid
+	padding-top: 72px;//grid
+	padding-bottom: 75px;//grid
+	
+	.bem_level_3();
+}
+
+.catalog__title {
+	.wrapper();//grid
+	
+	.bem_level_4();
+}
+
+.product {
+	.wrapper();//grid
+	margin-top: 30px;//grid
+
+	border: 1px solid @unactive_element;
+	.bem_level_3();
+}
+
+.product__header {
+	.bem_level_4();
+}
+
+.product__footer {
+	padding: 27px;//grid
+
+	border-top: 1px solid @unactive_element;
+	.bem_level_4();
+}
+
+.product__title {
+	margin-bottom: 6px;//grid
+	
+	.bem_level_5();
+}
+
+.product__character {
+	margin-bottom: 40px;//grid
+	
+	.bem_level_5();
+}
+
+.product__price {
+	position: relative;//grid
+	
+	.bem_level_5();
+	
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		
+		width: 10px;
+		height: 10px;
+		
+		background-color: lime;
+	}
+}
+
+@media (min-width: 668px) {
+	
+	.catalog__title_wrapper {
+		// margin-bottom: 80px;
+		padding-top: 95px;//grid
+		padding-bottom: 80px;//grid
+	}
+	
+	.catalog__title {
+		text-align: center;
+	}
+	
+	.catalog__wrapper {
+		margin-top: 80px;//grid
+	}
+	
+	.product {
+		.clearfix();//grid
+		margin-top: 54px;//grid
+	}
+	
+	.product__header {
+		float: left;//grid
+	}
+	
+	.product__footer {
+		float: left;//grid
+		
+		border-top: none;
+		border-left: 1px solid @unactive_element;
+	}
+	
+	
+	.product__character {
+		margin-bottom: 196px;//grid
+	}
+}
+
+@media (min-width: 1050px) {
+
+	.catalog__title_wrapper {
+		margin-bottom: 0;//grid
+		padding: 99px 0//grid
+	}
+	
+	.catalog__wrapper{
+		.clearfix();//grid
+		.wrapper();//grid
+		padding-top: 128px;//grid
+		
+		.bem_level_3();
+	}
+	
+	.product {
+		float: left;//grid
+	
+		width: 315px;//grid
+		margin-right: 52px;//grid
+		box-sizing: border-box;//grid
+		
+		text-align: left;
+	}
+	
+	.product:nth-child(3) {
+	
+		.product__character {
+			margin-bottom: 10px;//grid
+		}
+	}
+	
+	.product:nth-child(3n+3) {
+		.clearfix();//grid
+		margin-right: 0;//grid
+	}
+
+	.product__header {
+		float: none;//grid
+		
+		width: 314px;//grid
+		height: 461px;//grid
+	}
+	
+	.product__footer {
+		float: none;//grid
+		
+		padding: 0 27px;//grid
+		padding-top: 28px;//grid
+		padding-bottom: 25px;//grid
+		
+		border: none;
+		border-top: 1px solid @unactive_element;
+	}
+	
+	.product__title {
+		margin-bottom: 6px;//grid
+	}
+	
+	.product__character {
+		margin-bottom: 40px;//grid
+	}
+}

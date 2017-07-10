@@ -1,0 +1,140 @@
+.main_navigation {
+	.wrapper();//grid
+	// .font_Verdana();
+	// font-size: @font_size_base;
+	// font-weight: bold;
+	// color: @title_text;
+	text-align: center;//grid
+	// line-height: 24px;
+	
+	.bem_level_2();
+}
+
+.main_navigation__wrapper {
+	display: none;//grid
+}
+
+.main_navigation a {
+	// color: @title_text;
+	// text-decoration: none;
+}
+
+.main_navigation__toggle {
+	display: none;//grid
+}
+
+.main_navigation__list {
+	.bem_level_3();//grid
+	
+	.no_list_style();//grid
+}
+
+.main_navigation__user_block {
+	margin: 0;//grid
+	padding: 0;//grid
+	
+	// list-style: none;
+	
+	.bem_level_3();//grid
+}
+	
+.main_navigation__item input{
+	display: none;//grid
+}
+
+.main_navigation__item {
+	.bem_level_4();//grid
+	
+	min-height: 78px;//grid
+
+	border-top: 1px solid @unactive_element;
+
+	// padding: 28px 0;
+	
+	// border-bottom:  solid 1px;
+}
+
+
+@media (min-width: 668px) {
+	.main_navigation {
+		.clearfix();//grid
+		// padding: 0;
+		// padding-top: 22px;
+		// padding-bottom: 20px;
+	}
+
+	.main_navigation__wrapper {
+		float: right;//grid
+		
+		display: block;//grid
+		// padding-left: 370px;
+	}
+
+	.main_navigation__list {
+		position: absolute;//grid
+		top: 88px;//grid
+		left: 0;//grid
+		
+		// height: 88px;
+	}
+	
+	.main_navigation__user_block {
+		.clearfix();//grid
+		// float: right;
+		// .clearfix();
+		
+		// text-align: justify;
+	}
+	
+	.main_navigation__user_block .main_navigation__item {
+		border-left: 1px solid @unactive_element;
+	}
+	
+	.main_navigation__item {
+		float: left;//grid
+		// display: inline-block;
+		// float: left;
+		// width: 149px;
+		// height: 88px;
+		// margin: 0;
+		// padding: 0;
+	}
+}
+
+@media (min-width: 1050px) {
+
+	.main_navigation {	
+		// padding: 0;
+		// .clearfix();
+	}
+
+	.main_navigation__wrapper {
+		// position: static;
+		float: none;//grid
+		// top: 88px;
+		// left: 0;
+		
+		// height: 88px;
+	}
+	
+	.main_navigation__list {
+		position: static;//grid
+		float: left;//grid
+	}
+	
+	.main_navigation__user_block {
+		float: right;//grid
+		// .clearfix();
+		
+		// text-align: justify;
+	}
+	
+	.main_navigation__item {
+		// display: inline-block;
+		// float: left;
+		// width: 149px;
+		// height: 88px;
+		// margin: 0;
+		// padding: 0;
+	}
+}

@@ -5,124 +5,141 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="fonts/Tahoma.ttf">
-	<link rel="stylesheet" href="fonts/Verdana.ttf">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=cyrillic" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="fonts/Tahoma.ttf"> --> <!-- Шрифты подключил локально, поэтому линки скрыл-->
+	<!-- <link rel="stylesheet" href="fonts/Verdana.ttf"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=cyrillic" rel="stylesheet"> -->
 </head>
 <body>
-	<header class="page_header">
-		<nav class="main_navigation">
-			<h1 class="visually_hidden"></h1>
-			<div class="page_header__logo">
-				<img src="img/mishka-logo-mobile.png" alt="Mishka" width="86" height="35">
+	<header class="page-header">
+		<nav class="main-navigation  main-navigation--nojs">
+			<h1 class="visually-hidden">Мишка - подделки ручной работы для дома</h1>
+			<div class="page-header__logo">
+			<a href="index.html"><img src="img/mishka-logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
 			</div>
-			<button class="main_navigation__toggle">Открыть/Закрыть меню</button>
-			<div class="main_navigation__wrapper">
-				<ul class="main_navigation__list">
-					<li class="main_navigation__item"><a href="catalog.html">Каталог товаров</a></li>
-					<li class="main_navigation__item"><a href="order_form.html">Вязание на заказ</a></li>
+			<button class="main-navigation__toggle" type="button">Открыть/Закрыть меню</button>
+			<div class="main-navigation__wrapper">
+				<ul class="main-navigation__list">
+					<li class="main-navigation__item"><a>Каталог товаров</a></li>
+					<li class="main-navigation__item"><a href="order_form.html">Вязание на заказ</a></li>
 				</ul>
-				<ul class="main_navigation__user_block">
-					<li class="main_navigation__item"><label>Поиск по сайту</label><input type="text" class="main_navigation__user_search"></li>
-					<li class="main_navigation__item"><a href="#" class="main_navigation__user_basket">Корзина:<span id=basket></span></a></li>
+				<ul class="main-navigation__user-block">
+					<li class="main-navigation__item"><label for="search">Поиск по сайту</label><input type="text" class="main-navigation__user-search" id="search"></li>
+					<li class="main-navigation__item"><a href="#" class="main-navigation__user-basket">Корзина:<span id=basket></span></a></li>
 				</ul>
 			</div>
 		</nav>
-	</header>
-	</header>
-	<main class="page_main">
+	<main class="page-main">
 		<section class="catalog">
-			<div class="catalog__title_wrapper">
-				<h1 class="catalog__title page_title">Каталог товаров</h1>
+			<div class="catalog__title-wrapper">
+				<h1 class="catalog__title page-title">Каталог товаров</h1>
 			</div>
-			<div class="catalog__wrapper">
+			<div class="product__wrapper">
 				<article class="product">
 					<header class="product__header">
-						<img class="product__photo" src="" alt="" width="260" height="195">
+						<img class="product__photo" src="img/photo-1-mobile.jpg" alt="" width="260" height="195">
 					</header>
 					<footer class="product__footer">
 						<h2 class="product__title">Зайчик-попрыгайчик</h2>
 						<span class="product__character">Рост 30 см, вес 200г</span>
-						<span class="product__price">1200 руб.</span>
+						<span class="product__price">1200 руб.
+							<button class="product__basket-btn" type="button"></button>
+						</span>
 					</footer>
 				</article>
 				<article class="product">
 					<header class="product__header">
-						<img class="product__photo" src="" alt="" width="260" height="195">
+						<img class="product__photo" src="img/photo-2-mobile.jpg" alt="" width="260" height="195">
 					</header>
 					<footer class="product__footer">
 						<h2 class="product__title">Корзинка для белья</h2>
 						<span class="product__character">Диаметр 15 см, высота 10 см</span>
-						<span class="product__price">690 руб.</span>
+						<span class="product__price">690 руб.
+							<button class="product__basket-btn" type="button"></button>
+						</span>
 					</footer>
 				</article>
 				<article class="product">
 					<header class="product__header">
-						<img class="product__photo" src="" alt="" width="260" height="195">
+						<img class="product__photo" src="img/photo-3-mobile.jpg" alt="" width="260" height="195">
 					</header>
 					<footer class="product__footer">
 						<h2 class="product__title">Большая корзинка для игрушек</h2>
 						<span class="product__character">Диаметр 30 см, высота 30 см</span>
-						<span class="product__price">1500 руб.</span>
+						<span class="product__price">1500 руб.
+							<button class="product__basket-btn" type="button"></button>
+						</span>
 					</footer>
 				</article>
 				<article class="product">
 					<header class="product__header">
-						<img class="product__photo" src="" alt="" width="260" height="195">
+						<img class="product__photo" src="img/photo-1-mobile.jpg" alt="" width="260" height="195">
 					</header>
 					<footer class="product__footer">
-						<h2 class="product__title">Корзинка для белья</h2>
-						<span class="product__character">Диаметр 15 см, высота 10 см</span>
-						<span class="product__price">690 руб.</span>
+						<h2 class="product__title">Зайчик-попрыгайчик</h2>
+						<span class="product__character">Рост 30 см, вес 200г</span>
+						<span class="product__price">1200 руб.
+							<button class="product__basket-btn" type="button"></button>
+						</span>
 					</footer>
 				</article>
 				<article class="product">
 					<header class="product__header">
-						<img class="product__photo" src="" alt="" width="260" height="195">
+						<img class="product__photo" src="img/photo-2-mobile.jpg" alt="" width="260" height="195">
 					</header>
 					<footer class="product__footer">
 						<h2 class="product__title">Корзинка для белья</h2>
 						<span class="product__character">Диаметр 15 см, высота 10 см</span>
-						<span class="product__price">690 руб.</span>
+						<span class="product__price">690 руб.
+							<button class="product__basket-btn" type="button"></button>
+						</span>
 					</footer>
 				</article>
 				<article class="product">
 					<header class="product__header">
-						<img class="product__photo" src="" alt="" width="260" height="195">
+						<img class="product__photo" src="img/photo-3-mobile.jpg" alt="" width="260" height="195">
 					</header>
 					<footer class="product__footer">
-						<h2 class="product__title">Корзинка для белья</h2>
-						<span class="product__character">Диаметр 15 см, высота 10 см</span>
-						<span class="product__price">690 руб.</span>
+						<h2 class="product__title">Большая корзинка для игрушек</h2>
+						<span class="product__character">Диаметр 30 см, высота 30 см</span>
+						<span class="product__price">1500 руб.
+							<button class="product__basket-btn" type="button"></button>
+						</span>
 					</footer>
 				</article>
 				<article class="product">
 					<header class="product__header">
-						<img class="product__photo" src="" alt="" width="260" height="195">
+						<img class="product__photo" src="img/photo-1-mobile.jpg" alt="" width="260" height="195">
 					</header>
 					<footer class="product__footer">
-						<h2 class="product__title">Корзинка для белья</h2>
-						<span class="product__character">Диаметр 15 см, высота 10 см</span>
-						<span class="product__price">690 руб.</span>
-					</footer>
-				</article><article class="product">
-					<header class="product__header">
-						<img class="product__photo" src="" alt="" width="260" height="195">
-					</header>
-					<footer class="product__footer">
-						<h2 class="product__title">Корзинка для белья</h2>
-						<span class="product__character">Диаметр 15 см, высота 10 см</span>
-						<span class="product__price">690 руб.</span>
+						<h2 class="product__title">Зайчик-попрыгайчик</h2>
+						<span class="product__character">Рост 30 см, вес 200г</span>
+						<span class="product__price">1200 руб.
+							<button class="product__basket-btn" type="button"></button>
+						</span>
 					</footer>
 				</article>
 				<article class="product">
 					<header class="product__header">
-						<img class="product__photo" src="" alt="" width="260" height="195">
+						<img class="product__photo" src="img/photo-2-mobile.jpg" alt="" width="260" height="195">
 					</header>
 					<footer class="product__footer">
 						<h2 class="product__title">Корзинка для белья</h2>
 						<span class="product__character">Диаметр 15 см, высота 10 см</span>
-						<span class="product__price">690 руб.</span>
+						<span class="product__price">690 руб.
+							<button class="product__basket-btn" type="button"></button>
+						</span>
+					</footer>
+				</article>
+				<article class="product">
+					<header class="product__header">
+						<img class="product__photo" src="img/photo-3-mobile.jpg" alt="" width="260" height="195">
+					</header>
+					<footer class="product__footer">
+						<h2 class="product__title">Большая корзинка для игрушек</h2>
+						<span class="product__character">Диаметр 30 см, высота 30 см</span>
+						<span class="product__price">1500 руб.
+							<button class="product__basket-btn" type="button"></button>
+						</span>
 					</footer>
 				</article>
 			</div>
@@ -133,7 +150,7 @@
 					<h2 class="production__title">Процесс производства</h2>
 				</header>
 				<div class="production__video">
-					<iframe src="" frameborder="0"></iframe>
+					<iframe class="production__player" src="" frameborder="0"></iframe>
 				</div>
 				<footer class="production__footer">
 					<p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -142,16 +159,35 @@
 			</div>
 		</section>
 	</main>
-	<footer class="page_footer">
-		<div class="page_footer__wrapper">
-			<p class="page_footer__social">
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<a class="page-footer__logo" href="index.html"></a>
+			<p class="page-footer__social">
 				<span class="social">
 					<a href="" class="social__link  social__link--inst">Инстаграм</a>
 					<a href="" class="social__link  social__link--fb">Фейсбук</a>
 					<a href="" class="social__link  social__link--twit">Твиттер</a>
 				</span></p>
-			<p class="page_footer__copyright"><span>Разработано <a href="#"></a></span></p>
+			<p class="page-footer__copyright"><span>Разработано <a href="#"></a></span></p>
 		</div>
 	</footer>
+	
+	<script>
+		var nav_main = document.querySelector('.main-navigation');
+		var nav_toggle = document.querySelector('.main-navigation__toggle');
+		
+		nav_main.classList.remove('main-navigation--nojs');
+		nav_main.classList.add('main-navigation--closed');
+		
+		nav_toggle.addEventListener('click', function() {
+			if (nav_main.classList.contains('main-navigation--closed')) {
+				nav_main.classList.remove('main-navigation--closed');
+				nav_main.classList.add('main-navigation--opened');
+			} else {
+				nav_main.classList.add('main-navigation--closed');
+				nav_main.classList.remove('main-navigation--opened');
+			}
+		});
+	</script>
 </body>
 </html>

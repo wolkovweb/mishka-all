@@ -5,26 +5,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="fonts/Tahoma.ttf">
-	<link rel="stylesheet" href="fonts/Verdana.ttf">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=cyrillic" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="fonts/Tahoma.ttf"> --> <!-- Шрифты подключил локально, поэтому линки скрыл-->
+	<!-- <link rel="stylesheet" href="fonts/Verdana.ttf"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=cyrillic" rel="stylesheet"> -->
 </head>
 <body>
-	<header class="page_header">
-		<nav class="main_navigation">
-			<h1 class="visually_hidden"></h1>
-			<div class="page_header__logo">
-				<img src="img/mishka-logo-mobile.png" alt="Mishka" width="86" height="35">
+	<header class="page-header">
+		<nav class="main-navigation  main-navigation--nojs">
+			<h1 class="visually-hidden">Мишка - подделки ручной работы для дома</h1>
+			<div class="page-header__logo">
+				<a><img src="img/mishka-logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
 			</div>
-			<button class="main_navigation__toggle">Открыть/Закрыть меню</button>
-			<div class="main_navigation__wrapper">
-				<ul class="main_navigation__list">
-					<li class="main_navigation__item"><a href="catalog.html">Каталог товаров</a></li>
-					<li class="main_navigation__item"><a href="order_form.html">Вязание на заказ</a></li>
+			<button class="main-navigation__toggle" type="button">Открыть/Закрыть меню</button>
+			<div class="main-navigation__wrapper">
+				<ul class="main-navigation__list">
+					<li class="main-navigation__item"><a href="catalog.html">Каталог товаров</a></li>
+					<li class="main-navigation__item"><a href="order_form.html">Вязание на заказ</a></li>
 				</ul>
-				<ul class="main_navigation__user_block">
-					<li class="main_navigation__item"><label>Поиск по сайту</label><input type="text" class="main_navigation__user_search"></li>
-					<li class="main_navigation__item"><a href="#" class="main_navigation__user_basket">Корзина:<span id=basket></span></a></li>
+				<ul class="main-navigation__user-block">
+					<li class="main-navigation__item"><label for="search">Поиск по сайту</label><input type="text" class="main-navigation__user-search" id="search"></li>
+					<li class="main-navigation__item"><a href="#" class="main-navigation__user-basket">Корзина:<span id=basket></span></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -33,12 +33,12 @@
 				<h2 class="description__title">Милые штуки ручной<br>работы для дома</h2>
 			</header>
 			<ul class="description__list">
-				<li class="description__item"><a href="#"><span>Предметы интерьера</span></a></li>
-				<li class="description__item"><a href="#"><span>Детские игрушки</span></a></li>
+				<li class="description__item"><a href="#"><span>Предметы<br>интерьера</span></a></li>
+				<li class="description__item"><a href="#"><span>Детские<br>игрушки</span></a></li>
 			</ul>
 		</section>
 	</header>
-	<main class="page_main">
+	<main class="page-main">
 		<article class="featured">
 			<div class="featured__wrapper">
 				<header class="featured__header">
@@ -52,7 +52,7 @@
 						<td class="featured__value">"Тиффани"/серый</td>
 					</tr>
 					<tr>
-						<td class="featured__parameter">Диаметр</td>
+						<td class="featured__parameter">Диаметр:</td>
 						<td class="featured__value">25 см</td>
 					</tr>
 					<tr>
@@ -61,9 +61,9 @@
 					</tr>
 				</table>
 				<div class="featured__foto">
-					<img src="img/triple-set-index-mobile.jpg" alt="Вязанные корзинки">
+					<img src="img/triple-set-index-mobile.jpg" alt="Вязанные корзинки" width="260" height="315">
 				</div>
-				<span class="featured__price">Цена: 990 руб</span>
+				<span class="featured__price">Цена: 990 руб.</span>
 				<a class="btn" href="#">Заказать</a>
 				
 			</div>
@@ -95,7 +95,7 @@
 					<button class="btn  review__prew" type="button">Назад</button>
 					<button class="btn  review__next" type="button">Вперед</button>
 				</div>
-				<button class="btn" type="button">Написать</button>
+				<button class="review_btn  btn" type="button">Написать</button>
 			</div>
 		</section>
 		<section class="contacts">
@@ -113,23 +113,42 @@
 				</table>
 			</header>
 			<div class="contacts__map">
-				<img class="map_pin" src="img/map-pin.png" alt="г.Санкт-Петербург, ул.Большая Конюшенная, д. 19/8, оффис 101" width="67" height="100">
+				<img class="map-pin" src="img/map-pin.svg" alt="г.Санкт-Петербург, ул.Большая Конюшенная, д. 19/8, оффис 101" width="67" height="100">
 			</div>
 			<footer class="contacts__footer">
 				<a href="#" class="btn">напишите нам</a>
 			</footer>
 		</section>
 	</main>
-	<footer class="page_footer">
-		<div class="page_footer__wrapper">
-			<p class="page_footer__social">
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<a class="page-footer__logo" style="background-image: url('img/logo-footer.svg');"></a>
+			<p class="page-footer__social">
 				<span class="social">
 					<a href="" class="social__link  social__link--inst">Инстаграм</a>
 					<a href="" class="social__link  social__link--fb">Фейсбук</a>
 					<a href="" class="social__link  social__link--twit">Твиттер</a>
 				</span></p>
-			<p class="page_footer__copyright"><span>Разработано <a href="#"></a></span></p>
+			<p class="page-footer__copyright"><span>Разработано <a href="#"></a></span></p>
 		</div>
 	</footer>
+	
+	<script>
+		var nav_main = document.querySelector('.main-navigation');
+		var nav_toggle = document.querySelector('.main-navigation__toggle');
+		
+		nav_main.classList.remove('main-navigation--nojs');
+		nav_main.classList.add('main-navigation--closed');
+		
+		nav_toggle.addEventListener('click', function() {
+			if (nav_main.classList.contains('main-navigation--closed')) {
+				nav_main.classList.remove('main-navigation--closed');
+				nav_main.classList.add('main-navigation--opened');
+			} else {
+				nav_main.classList.add('main-navigation--closed');
+				nav_main.classList.remove('main-navigation--opened');
+			}
+		});
+	</script>
 </body>
 </html>
